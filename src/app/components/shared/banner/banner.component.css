@@ -1,0 +1,41 @@
+/* .carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+}
+
+.carousel-slide:first-child {
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+} */

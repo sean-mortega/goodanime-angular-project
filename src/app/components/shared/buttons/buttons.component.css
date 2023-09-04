@@ -1,0 +1,18 @@
+
+a {
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  max-width: 200px;
+  background: var(--bg-primary);
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+
+a.red {
+  background-color: crimson;
+}

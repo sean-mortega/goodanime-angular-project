@@ -1,0 +1,22 @@
+.banner-wrap {
+  position: relative;
+}
+
+.banner-wrap img {
+  margin: auto;
+  border-radius: 6px;
+}
+
+.news-list {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.news-list ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0.5em 0.1em;
+}
+
+.news-list ul li p {
+  font-size: 0.85em;
+}

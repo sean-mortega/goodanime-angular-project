@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="home-group">
+    <section class="features mb-1">
+      <div class="banner-group">
+        <h1 class="txt-primary title mb-1">Featured</h1>
+        <app-carousel></app-carousel>
+      </div>
+
+      <div class="banner-group">
+        <h3 class="txt-primary title mb-2">What's New?</h3>
+        <app-news></app-news>
+      </div>
+    </section>
+
+    <section class="lists mt-3">
+      <!-- 
+        <app-card-group
+          [headerName]="headerName"
+          [cardData]="animeData"
+        ></app-card-group>
+      -->
+
+      <div class="header">
+        <h1 class="txt-primary title mb-1">Trending Now</h1>
+        <a
+          href="javascript:void(0)"
+          (click)="toggleVisibility()"
+          class="showMore"
+          >Show More</a
+        >
+      </div>
+      <div class="card-group">
+        <div *ngFor="let anime of visibleCards; let i = index">
+          <app-card [cardData]="anime"></app-card>
+        </div>
+      </div>
+    </section>
+
+    <section class="lists mt-3">
+      <div class="header">
+        <h1 class="txt-primary title mb-1">Recommended</h1>
+        <a
+          href="javascript:void(0)"
+          (click)="toggleVisibility()"
+          class="showMore"
+          >Show More</a
+        >
+      </div>
+      <div class="card-group">
+        <div *ngFor="let anime of visibleCards; let i = index">
+          <app-card [cardData]="anime"></app-card>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

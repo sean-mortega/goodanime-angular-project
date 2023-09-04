@@ -1,0 +1,47 @@
+.home-group {
+  padding: 1em;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.7em;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 2fr 0.8fr;
+  gap: 0em 1.5em;
+  align-items: flex-start;
+}
+
+.header {
+  display: block;
+}
+
+.showMore {
+  margin: auto 0;
+  color: var(--bg-primary);
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em 0em;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

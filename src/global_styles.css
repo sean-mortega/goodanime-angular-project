@@ -1,0 +1,71 @@
+/* Add application styles & imports to this file! */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --bg-primary: #4b4e6d;
+  --bg-secondary: #84dcc6;
+  --bg-tertiary: #95a3b3;
+  --txt-primary: #ffffff;
+  --txt-secondary: #222222;
+  --corners: 5px;
+}
+
+*,
+body,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.txt-primary {
+  color: var(--bg-primary);
+  font-weight: 900;
+}
+
+.container {
+  padding: 0.5em;
+  max-width: 1050px !important;
+  margin: 0 auto;
+}
+
+.txt-secondary {
+  color: var(--bg-secondary);
+  font-weight: 900;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-bottom: 2em;
+}
+
+.mb-2 {
+  margin-bottom: 1.5em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mb-1 {
+  margin-bottom: 0.8em;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0em;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<div
+  class="card"
+  [class.flipped]="isFlipped"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+>
+  <div class="card-inner">
+    <div class="card-front" *ngIf="!isFlipped">
+      <div class="over">&nbsp;</div>
+      <img class="img" [src]="resImg" />
+      <h3 class="title">{{ resTitle }}</h3>
+      <h6 class="title">{{ resAuthor }}</h6>
+
+      <button class="favorite" href="">
+        <span class="material-symbols-outlined"> favorite </span>
+      </button>
+
+      <div class="overlay">&nbsp;</div>
+    </div>
+    <div class="card-back" *ngIf="isFlipped">
+      <p class="details ellipsis">{{ resDetails | truncateWords: 8 }}</p>
+      <app-buttons [btn_style]="watchStyle" [btn_name]="'Watch'" [btn_link]="resLink"> </app-buttons>
+    </div>
+  </div>
+</div>

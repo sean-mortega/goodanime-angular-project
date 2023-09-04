@@ -1,0 +1,100 @@
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+}
+
+.logotxt {
+  display: flex;
+  flex-direction: row;
+  font-weight: 900;
+  align-items: center;
+}
+
+.logotxt div.vertical {
+  color: var(--bg-secondary);
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 900;
+  transform: rotate(-10deg) skew(0deg, 0deg);
+}
+
+.logotxt div + div {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2em;
+  color: #fff;
+}
+
+.first_row {
+  background: var(--bg-primary);
+  padding: 0em 0em 0.2em;
+}
+
+.first_row .container,
+.second_row .container {
+  display: flex;
+  place-content: space-between;
+  align-content: center;
+}
+
+.second_row {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.second_row ul {
+  margin-top: 0.5em;
+  justify-content: space-between;
+  gap: 0.8em;
+  position: relative;
+  padding-inline-start: 0em;
+}
+
+.second_row ul li {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0em 0.5em;
+}
+
+.cta .btns {
+  margin-right: 20px;
+  display: flex;
+}
+
+:host ::ng-deep .cta .btns a {
+  border-radius: 0px !important;
+}
+
+:host ::ng-deep .cta > .btns a:first-child {
+  color: #000 !important;
+}
+
+.menu .placer {
+  background: var(--bg-primary);
+  width: 100%;
+}
+
+.menu ul a {
+  text-transform: uppercase;
+}
+
+.second_row ul {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-primary);
+}
